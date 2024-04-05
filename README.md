@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# OMDB API MOVIES/SERIES
 
-## Getting Started
+Este es un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## Empezando
 
-```bash
-npm run dev
-# or
+Para utilizar este proyecto, primero necesitas obtener una API Key del OMDb API.
+
+### Obtener una API Key de OMDb
+
+1. Visita [OMDb API](http://www.omdbapi.com/) y haz clic en el enlace "API Key".
+2. Rellena el formulario para solicitar una API Key.
+3. Recibirás tu API Key por correo electrónico. Guárdala, ya que la necesitarás para configurar el proyecto.
+
+### Configuración del proyecto
+
+Antes de ejecutar la aplicación, se necesita configurar tu entorno:
+
+1. Crear un archivo `.env` en la raíz del proyecto.
+2. Añadir  API Key de OMDb al archivo como sigue:
+
+   ```env
+   NEXT_PUBLIC_OMDB_API_KEY=tu_api_key_aquí
+   ```
+
+### Ejecutar el servidor de desarrollo
+
+Ahora, puedes arrancar el servidor de desarrollo:
+```
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre http://localhost:3000 en tu navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ejecutar tests
+Para ejecutar los tests, usa el siguiente comando:
+```
+yarn run test
+```
